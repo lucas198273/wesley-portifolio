@@ -1,24 +1,10 @@
-import { useState } from "react";
-import { toast } from "react-toastify";
+
+
 
 export default function AboutPiercer() {
-  const [isClicked, setIsClicked] = useState(false);
 
-  const handleWhatsAppClick = () => {
-    if (!isClicked) {
-      setIsClicked(true);
-      const message = encodeURIComponent(
-        "Olá! Tenho interesse em agendar um piercing com a body piercer. Pode me ajudar?"
-      );
-      const whatsappLink = `https://wa.me/5531994340017?text=${message}`;
-      window.open(whatsappLink, "_blank");
-      toast.info("Mensagem enviada para o WhatsApp!", {
-        position: "top-right",
-        autoClose: 3000,
-      });
-      setTimeout(() => setIsClicked(false), 3000);
-    }
-  };
+
+
 
   return (
     <section className="bg-black border-t-4 border-[#556b2f] py-12 px-4 md:px-8 text-white">
