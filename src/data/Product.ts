@@ -6,7 +6,7 @@ export interface Product {
   available?: boolean;
   imageUrl: string;
   notes?: string[];
-  category: "israel" | "brenda" | "piercing";
+  category: "apresentacoes" | "orquestras" | "ensaios" | "projetos";
   materials?: {
     type: string;
     price: number;
@@ -14,46 +14,90 @@ export interface Product {
 }
 
 export const products: Product[] = [
-  // Israel
   {
-    id: "israel1",
-    name: "Tatuagem Realista",
-    description: "Trabalho autoral do artista Israel — realismo com traços precisos e sombreados profundos.",
-    imageUrl: "/assets/israel/img-i1.webp",
-    category: "israel",
-    available: true,
+    id: "apresentacao1",
+    name: "Concerto Solo em BH",
+    description: "WOlyver em apresentação solo com repertório clássico e contemporâneo.",
+    imageUrl: "/assets/imgs/img1.webp",
+    category: "apresentacoes",
+  },
+  {
+    id: "apresentacao2",
+    name: "Recital Intimista",
+    description: "Apresentação com atmosfera minimalista e foco na expressividade do violoncelo.",
+    imageUrl: "/assets/imgs/img2.webp",
+    category: "apresentacoes",
   },  
   {
-    id: "israel1",
-    name: "Tatuagem Realista",
-    description: "Trabalho autoral do artista Israel — realismo com traços precisos e sombreados profundos.",
-    imageUrl: "/assets/israel/img-i2.webp",
-    category: "israel",
-    available: true,
+    id: "apresentacao2",
+    name: "Recital Intimista",
+    description: "Apresentação com atmosfera minimalista e foco na expressividade do violoncelo.",
+    imageUrl: "/assets/imgs/img7.webp",
+    category: "apresentacoes",
+  },  {
+    id: "apresentacao2",
+    name: "Recital Intimista",
+    description: "Apresentação com atmosfera minimalista e foco na expressividade do violoncelo.",
+    imageUrl: "/assets/imgs/img8.webp",
+    category: "apresentacoes",
+  }, {
+    id: "apresentacao2",
+    name: "Recital Intimista",
+    description: "Apresentação com atmosfera minimalista e foco na expressividade do violoncelo.",
+    imageUrl: "/assets/imgs/img3.webp",
+    category: "apresentacoes",
   },
 
-  // Brenda
-  {
-    id: "brenda1",
-    name: "Tatuagem Feminina Delicada",
-    description: "Criação da artista Brenda — traços finos, delicados e simbólicos.",
-    imageUrl: "/assets/brenda/img-b1.webp",
-    category: "brenda",
-    available: true,
-  },
+  // 🎼 Orquestras
+  // {
+  //   id: "orquestra1",
+  //   name: "Orquestra Sinfônica Jovem",
+  //   description: "Participação como violoncelista convidado.",
+  //   imageUrl: "/assets/portfolio/o1.webp",
+  //   category: "orquestras",
+  // },
 
-  // Piercing
+  // 🎬 Ensaios
   {
-    id: "piercing1",
-    name: "Piercing Nostril",
-    description: "Perfuração discreta no nariz com joia de aço cirúrgico ou titânio.",
-    available: true,
-    imageUrl: "/assets/sol/img-sol-1.webp",
-    notes: ["Joias pequenas", "Estilo delicado"],
-    category: "piercing",
-    materials: [
-      { type: "Aço cirúrgico", price: 80 },
-      { type: "Titânio", price: 100 },
-    ],
-  },
+    id: "ensaio1",
+    name: "Estudo Técnico",
+    description: "Registro dos momentos de estudo e aperfeiçoamento técnico.",
+    imageUrl: "/assets/imgs/bw1.webp",
+    category: "ensaios",
+  },  {
+    id: "ensaio1",
+    name: "Estudo Técnico",
+    description: "Registro dos momentos de estudo e aperfeiçoamento técnico.",
+    imageUrl: "/assets/imgs/bw2.webp",
+    category: "ensaios",
+  },  {
+    id: "ensaio1",
+    name: "Estudo Técnico",
+    description: "Registro dos momentos de estudo e aperfeiçoamento técnico.",
+    imageUrl: "/assets/imgs/bw3.webp",
+    category: "ensaios",
+  },  {
+    id: "ensaio1",
+    name: "Estudo Técnico",
+    description: "Registro dos momentos de estudo e aperfeiçoamento técnico.",
+    imageUrl: "/assets/imgs/bw4.webp",
+    category: "ensaios",
+  },  
+   {
+    id: "ensaio1",
+    name: "Estudo Técnico",
+    description: "Registro dos momentos de estudo e aperfeiçoamento técnico.",
+    imageUrl: "/assets/imgs/bw5.webp",
+    category: "ensaios",
+  },  
+  
+
+  // 🎵 Projetos musicais
+  // {
+  //   id: "projeto1",
+  //   name: "Projeto Camerata",
+  //   description: "Participação no projeto de música de câmara com repertório selecionado.",
+  //   imageUrl: "/assets/portfolio/pr1.webp",
+  //   category: "projetos",
+  // },
 ];

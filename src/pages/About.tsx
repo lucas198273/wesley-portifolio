@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import StudioAbout from "../components/StudioAbout/StudioAbout";
 import { ArrowUp } from "lucide-react";
 
 export default function About() {
@@ -26,7 +25,6 @@ export default function About() {
 
   return (
     <div>
-      <StudioAbout />
       
 
       {/* Botão voltar ao topo */}

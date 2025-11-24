@@ -1,0 +1,84 @@
+import { useState } from "react";
+import { toast } from "react-toastify";
+
+export default function AboutMusicArtistWesley() {
+  const [isClicked, setIsClicked] = useState(false);
+
+  // 🔧 >>> CONFIGURAÇÃO FÁCIL DO TAMANHO DA IMAGEM <<<
+  const imageSizeMobile = "w-60";     // tamanho no mobile
+  const imageSizeDesktop = "w-96";    // tamanho no desktop (md+)
+  // Exemplo de tamanhos: w-32, w-40, w-48, w-56, w-64, w-72, w-80
+
+  const handleWhatsAppClick = () => {
+    if (!isClicked) {
+      setIsClicked(true);
+
+      const message = encodeURIComponent(
+        "Olá! Tenho interesse em contratar o músico Wesley Oliveira. Pode me passar mais informações?"
+      );
+
+      const whatsappLink = `https://wa.me/5531971705728?text=${message}`;
+      window.open(whatsappLink, "_blank");
+
+      toast.info("Mensagem enviada para o WhatsApp!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+
+      setTimeout(() => setIsClicked(false), 3000);
+    }
+  };
+
+  return (
+    <section className="bg-black border-t-4 border-blue-600 py-12 px-4 md:px-8 text-white">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+
+        {/* 🎻 Imagem do músico */}
+        <div className="w-full md:w-1/2 flex justify-center">
+          <img
+            src="/assets/imgs/img1.webp"
+            alt="Wesley Oliveira — músico e violoncelista"
+            className={`${imageSizeMobile} md:${imageSizeDesktop} rounded-xl shadow-2xl shadow-blue-500/20 hover:scale-105 transition-transform duration-300 ease-in-out`}
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        {/* 🎵 Texto */}
+        <div className="w-full  md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-blue-400 mb-5">
+            Wesley Oliveira — Violoncelista e Artista Musical
+          </h2>
+
+          <p className="text-base md:text-lg text-gray-300 mb-6 leading-relaxed">
+            Wesley Oliveira é um músico apaixonado pela arte e movido pela
+            intensidade da música instrumental. Seu violoncelo é extensão de sua
+            alma, transformando emoções em melodias marcantes que tocam o público
+            profundamente.
+          </p>
+
+          <p className="text-base md:text-lg text-gray-300 mb-6 leading-relaxed">
+            Com experiência em apresentações ao vivo, eventos especiais,
+            cerimônias e produções artísticas, Wesley domina técnicas clássicas e
+            contemporâneas, entregando performances únicas, sensíveis e
+            inesquecíveis.
+          </p>
+
+          <p className="text-base md:text-lg text-gray-300 mb-6 leading-relaxed">
+            Sua musicalidade é marcada por precisão, sentimento e presença
+            artística — um equilíbrio que transforma cada apresentação em uma
+            experiência singular.
+          </p>
+
+          <button
+            onClick={handleWhatsAppClick}
+            className="inline-block bg-blue-600 text-white font-semibold text-base md:text-lg py-2 md:py-3 px-6 md:px-8 rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-black disabled:opacity-50"
+            disabled={isClicked}
+          >
+            Contatar via WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}

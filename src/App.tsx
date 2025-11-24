@@ -9,20 +9,17 @@ import Hero from "./components/Hero/Hero";
 import About from "./pages/About";
 import Footer from "./components/Footer/Footer";
 import SocialMediaSection from "./components/SocialMidia/SocialMIdia";
-import ProductInfoSection from "./components/ProductInfoSection/ProductInfoSection";
 import { CartProvider } from "../contexts/CartContext";
 
 import ProductPage from "./pages/ProductPage";
-import AboutPiercer from "./components/AboutPiercer/AboutPiercer";
 import ScrollTop from "./components/ScrollTop/ScrollTop";
 import CategorySection from "./components/CategorySection/CategorySection";
 import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange/ScrollToTopOnRouteChange";
-import PiercingSection from "./components/PiercingSection/PiercingSection";
-import AboutTattooArtistBrenda from "./components/AboutTattooArtistBrenda/AboutTattooArtistBrenda";
-import AboutTattooArtistIsrael from "./components/AboutTattooArtistIsrael/AboutTattooArtistIsrael";
+import AboutMusicArtistWesley from "./components/AboutMusicArtistWesley/AboutMusicArtistWesley";
 
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import PoliticaEPrivacidade from "./pages/PoliticasEPrivacidade";
+import ContactPage from "./pages/ContactPage";
 
 function AppContent() {
 
@@ -59,19 +56,16 @@ function AppContent() {
               </Helmet>
               <main className="pt-20 min-h-screen flex flex-col">
                 <Hero />
-                <AboutTattooArtistIsrael />
+                <AboutMusicArtistWesley />
                 <section className="bg-white py-10">
-                  <CategorySection category="israel" />
+                  <CategorySection category="apresentacoes" />
                 </section>
-                <AboutTattooArtistBrenda />
-                <section className="bg-white py-10">
-                  <CategorySection category="brenda" />
-                </section>
-                <AboutPiercer />
+               
                 <section className="bg-white">
-                  <PiercingSection category="piercing" />
+                  <CategorySection category="ensaios" />
                 </section>
-                <ProductInfoSection />
+                
+               
                 <SocialMediaSection />
               </main>
             </>
@@ -79,6 +73,7 @@ function AppContent() {
         />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<ProductPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/Politicas" element={<PoliticaEPrivacidade />} />
       </Routes>
 
