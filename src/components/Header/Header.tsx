@@ -29,17 +29,20 @@ export default function Header() {
           <Link to="/products" className="hover:text-blue-400 transition-colors">Portfólio</Link>
         </nav>
 
-        {/* Logo centralizada */}
-        <div
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          data-aos="fade-up"
-        >
-          <img
-            src="/assets/logo.webp"
-            alt="Artista de Música Clássica"
-            className="w-24 sm:w-28 md:w-32 object-contain drop-shadow-[0_0_12px_rgba(0,150,255,0.5)]"
-          />
-        </div>
+   {/* Logo com link e animação flutuante */}
+<div
+  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-float"
+  data-aos="fade-up"
+>
+  <a href="/">
+    <img
+      src="/assets/logo.webp"
+      alt="Artista de Música Clássica"
+      className="w-24 sm:w-28 md:w-32 object-contain drop-shadow-[0_0_15px_rgba(0,120,255,0.45)] transition-transform hover:scale-105"
+    />
+  </a>
+</div>
+
 
         {/* Menu desktop - direita */}
         <nav className="hidden md:flex items-center space-x-6 text-gray-300 text-sm lg:text-base font-medium">

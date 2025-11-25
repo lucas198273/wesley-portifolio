@@ -16,8 +16,18 @@ html {
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.1s ease-in-out;
 }
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
+
 
 /* === Estilos base com Tailwind === */
 @layer base {

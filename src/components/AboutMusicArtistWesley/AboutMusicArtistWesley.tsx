@@ -1,33 +1,12 @@
-import { useState } from "react";
-import { toast } from "react-toastify";
-
+import { Link } from "react-router-dom";
 export default function AboutMusicArtistWesley() {
-  const [isClicked, setIsClicked] = useState(false);
 
   // 🔧 >>> CONFIGURAÇÃO FÁCIL DO TAMANHO DA IMAGEM <<<
   const imageSizeMobile = "w-60";     // tamanho no mobile
   const imageSizeDesktop = "w-96";    // tamanho no desktop (md+)
   // Exemplo de tamanhos: w-32, w-40, w-48, w-56, w-64, w-72, w-80
 
-  const handleWhatsAppClick = () => {
-    if (!isClicked) {
-      setIsClicked(true);
-
-      const message = encodeURIComponent(
-        "Olá! Tenho interesse em contratar o músico Wesley Oliveira. Pode me passar mais informações?"
-      );
-
-      const whatsappLink = `https://wa.me/5531971705728?text=${message}`;
-      window.open(whatsappLink, "_blank");
-
-      toast.info("Mensagem enviada para o WhatsApp!", {
-        position: "top-right",
-        autoClose: 3000,
-      });
-
-      setTimeout(() => setIsClicked(false), 3000);
-    }
-  };
+ 
 
   return (
     <section className="bg-black border-t-4 border-blue-600 py-12 px-4 md:px-8 text-white">
@@ -69,14 +48,12 @@ export default function AboutMusicArtistWesley() {
             artística — um equilíbrio que transforma cada apresentação em uma
             experiência singular.
           </p>
-
-          <button
-            onClick={handleWhatsAppClick}
-            className="inline-block bg-blue-600 text-white font-semibold text-base md:text-lg py-2 md:py-3 px-6 md:px-8 rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-black disabled:opacity-50"
-            disabled={isClicked}
-          >
-            Contatar via WhatsApp
-          </button>
+            <Link to="/contact" 
+              className="px-8 py-3 bg-blue-600 hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/30 text-white font-semibold rounded-md hover:shadow-blue-400/40">
+                Agendar apresentação
+            
+            </Link>
+        
         </div>
       </div>
     </section>

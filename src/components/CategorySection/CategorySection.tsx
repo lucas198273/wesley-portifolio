@@ -29,7 +29,7 @@ export default function CategorySection({ category }: CategorySectionProps) {
       `Olá! Gostaria de falar sobre o trabalho do músico WOlyver referente à categoria: ${categoryTitles[category]}.`
     );
 
-    const link = `https://wa.me/5531971705728?text=${msg}`;
+    const link = `https://wa.me/553197470497?text=${msg}`;
     window.open(link, "_blank");
   };
 

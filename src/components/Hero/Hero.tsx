@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,12 +58,12 @@ export default function Hero() {
               Uma trajetória construída em alma, respiro e expressão.
             </p>
 
-            <button
-              onClick={() => setIsOpen(true)}
-              className="px-8 py-3 bg-blue-600 hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/30 text-white font-semibold rounded-md hover:shadow-blue-400/40"
-            >
-              Contato profissional
-            </button>
+            <Link to="/contact" 
+              className="px-8 py-3 bg-blue-600 hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/30 text-white font-semibold rounded-md hover:shadow-blue-400/40">
+                Agendar apresentação
+            
+            </Link>
+        
           </div>
 
           {/* 🔵 IMAGEM ÚNICA — VIOLONCELO */}

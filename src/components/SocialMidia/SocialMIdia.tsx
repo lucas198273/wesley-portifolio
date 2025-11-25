@@ -36,7 +36,7 @@ const SocialMediaSection: React.FC = () => {
           {/* 🔗 Redes sociais */}
           <div className="flex justify-center gap-8 flex-wrap">
             <a
-              href="https://instagram.com/" // coloque o insta dele aqui
+              href="https://www.instagram.com/wesleyolyver336?igsh=MWZxMWFld2d3cmlkdA==" // coloque o insta dele aqui
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center transition-transform hover:scale-110 text-blue-500 hover:text-white"

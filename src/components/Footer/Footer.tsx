@@ -1,4 +1,4 @@
-import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaInstagram} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
         {/* 🔹 Ícones sociais */}
         <div className="flex space-x-6 text-2xl items-center">
           <a
-            href="https://www.instagram.com/wolyve_oficial/"
+            href="https://www.instagram.com/wesleyolyver336?igsh=MWZxMWFld2d3cmlkdA=="
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-[#4db8ff] transition-colors duration-300"
@@ -22,25 +22,9 @@ export default function Footer() {
             <FaInstagram />
           </a>
 
-          <a
-            href="https://youtube.com/@wolyve"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-[#4db8ff] transition-colors duration-300"
-            aria-label="YouTube"
-          >
-            <FaYoutube />
-          </a>
+         
 
-          <a
-            href="https://wa.me/5531971705728?text=Olá!%20Quero%20falar%20sobre%20shows,%20agendamentos%20ou%20parcerias.%20"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-[#4db8ff] transition-colors duration-300"
-            aria-label="WhatsApp"
-          >
-            <FaWhatsapp />
-          </a>
+      
         </div>
       </div>
 
