@@ -53,7 +53,7 @@ function AppContent() {
                   name="keywords"
                   content="música clássica, violinista, músico profissional, música para casamento, música para eventos, violinista para evento"
                 />
-                <link rel="canonical" href="https://seudominio.com/" />
+                <link rel="canonical" href="https://wesleyoliveira.art/" />
 
                 {/* Open Graph */}
                 <meta property="og:title" content="Wesley Oliveira | Violinista e Músico de Música Clássica" />
@@ -61,18 +61,11 @@ function AppContent() {
                   property="og:description"
                   content="Contrate um violinista profissional para casamentos, eventos e apresentações exclusivas."
                 />
-                <meta property="og:image" content="https://seudominio.com/imagens/wesley.jpg" />
-                <meta property="og:url" content="https://seudominio.com/" />
+                <meta property="og:image" content="https://wesleyoliveira.art/imagens/wesley.jpg" />
+                <meta property="og:url" content="https://wesleyoliveira.art/" />
                 <meta property="og:type" content="website" />
 
-                {/* Twitter */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Wesley Oliveira | Músico de Música Clássica" />
-                <meta
-                  name="twitter:description"
-                  content="Violinista profissional disponível para casamentos e eventos."
-                />
-
+             
                 {/* Schema.org */}
                 <script type="application/ld+json">
                   {`
